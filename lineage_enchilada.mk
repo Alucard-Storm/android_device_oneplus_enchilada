@@ -24,6 +24,14 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOS
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_ENABLE_BLUR := true
+PRODUCT_BUILD_PROP_OVERRIDES += \
+       RisingMaintainer="Akshay" \
+       RisingChipset="Snapdragon®845"
+
 PRODUCT_NAME := lineage_enchilada
 PRODUCT_DEVICE := enchilada
 PRODUCT_MANUFACTURER := OnePlus
