@@ -47,3 +47,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus6 \
     SystemDevice=OnePlus6 \
     SystemName=OnePlus6
+
+# Sign Builds
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/oneplus/priv-keys/releasekey
