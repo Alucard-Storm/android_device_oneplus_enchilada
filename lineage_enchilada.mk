@@ -24,13 +24,11 @@ $(call inherit-product, device/oneplus/enchilada/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# RisingOS
+# HorizonDroid
+HORIZON_MAINTAINER := Akshay
+TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GMS := true
-TARGET_CORE_GMS := true
-TARGET_ENABLE_BLUR := true
-PRODUCT_BUILD_PROP_OVERRIDES += \
-       RisingMaintainer="Akshay" \
-       RisingChipset="Snapdragon®845"
+WITH_GMS_VARIANT := pico
 
 PRODUCT_NAME := lineage_enchilada
 PRODUCT_DEVICE := enchilada
