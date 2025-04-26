@@ -12,7 +12,6 @@ git clone https://github.com/TheMuppets/proprietary_vendor_oneplus_sdm845-common
 
 echo "cloning extra repos"
 git clone https://github.com/LineageOS/android_hardware_oneplus.git -b lineage-22.2 hardware/oneplus --depth=1
-git clone https://github.com/xiaomi-haydn-devs/priv_keys.git vendor/oneplus/priv-keys
 
 echo "deleting the clone script, BYE!"
 rm device/oneplus/enchilada/vendorsetup.sh

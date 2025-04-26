@@ -48,5 +48,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemDevice=OnePlus6 \
     SystemName=OnePlus6
 
-# Sign Builds
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/oneplus/priv-keys/releasekey
+# OFFICIAL Stuff
+ ELIXIR_BUILD_TYPE := OFFICIAL
+ BUILD_USERNAME := Elixir
+ BUILD_HOSTNAME := Elixir
+ 
+ TARGET_FACE_UNLOCK_SUPPORTED := true
+ WITH_GMS := true
